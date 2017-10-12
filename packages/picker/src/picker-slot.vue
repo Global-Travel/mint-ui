@@ -391,6 +391,7 @@
     },
 
     mounted() {
+      this.currentValue = this.mutatingValues[this.defaultIndex]; // <= add
       this.ready = true;
       this.$emit('input', this.currentValue);
 
